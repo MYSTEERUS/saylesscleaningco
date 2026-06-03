@@ -1,92 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Say Less Cleaning Co.</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
 font-family:Arial,sans-serif;
 background:#000;
-color:white;
-text-align:center;
+color:#fff;
+line-height:1.6;
 }
 .hero{
+background:linear-gradient(135deg,#000,#1a1a1a);
 padding:60px 20px;
-background:#111;
+text-align:center;
+border-bottom:3px solid #ff4da6;
 }
-h1{
-font-size:48px;
+.logo{
+font-size:3rem;
+font-weight:bold;
 color:#ff4da6;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 .tagline{
-font-size:22px;
+font-size:1.3rem;
+margin-bottom:20px;
+}
+.discount{
+background:#ff4da6;
+color:white;
+display:inline-block;
+padding:12px 20px;
+border-radius:10px;
+font-weight:bold;
 margin-bottom:25px;
 }
 .btn{
 display:inline-block;
-padding:15px 30px;
+margin:8px;
+padding:15px 25px;
 background:#ff4da6;
 color:white;
 text-decoration:none;
-border-radius:12px;
+border-radius:10px;
 font-weight:bold;
-font-size:20px;
-margin:10px;
+}
+.btn:hover{
+opacity:.9;
 }
 .section{
-padding:40px 20px;
+padding:50px 20px;
+max-width:1200px;
+margin:auto;
 }
-.service{
+h2{
+color:#ff4da6;
+margin-bottom:20px;
+text-align:center;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.card{
 border:2px solid #ff4da6;
-padding:15px;
-margin:10px;
-border-radius:12px;
+padding:20px;
+border-radius:15px;
+background:#111;
+}
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+.price{
+background:#111;
+border:2px solid #ff4da6;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+.price h3{
+color:#ff4da6;
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+.gallery div{
+background:#111;
+border:2px dashed #ff4da6;
+padding:50px 20px;
+border-radius:15px;
+text-align:center;
+}
+.review{
+background:#111;
+padding:20px;
+border-radius:15px;
+border-left:5px solid #ff4da6;
+margin-bottom:15px;
 }
 .footer{
 background:#111;
 padding:40px 20px;
+text-align:center;
+border-top:3px solid #ff4da6;
+}
+.social{
+margin-top:20px;
+}
+.social a{
+display:inline-block;
+margin:5px;
+padding:12px 18px;
+background:#ff4da6;
+color:white;
+text-decoration:none;
+border-radius:8px;
 }
 </style>
 </head>
 <body>
 <div class="hero">
-<h1>SAY LESS CLEANING CO.</h1>
-<p class="tagline">
-Cape Cod • South Shore • Bristol County
-</p>
+<div class="logo">
+🧼 SAY LESS CLEANING CO.
+</div>
+<div class="tagline">
+Fast • Friendly • Thorough
+</div>
+<div class="discount">
+🎉 $25 OFF YOUR FIRST CLEAN
+</div>
 <p>
-Professional Cleaning Without The Stress
+Serving Cape Cod • South Shore • Bristol County
 </p>
 <br>
 <a class="btn" href="tel:5084182088">
 📞 CALL NOW
 </a>
-<br>
 <a class="btn" href="sms:5084182088">
-💬 TEXT US NOW
+💬 TEXT NOW
+</a>
+<a class="btn" href="mailto:saylesscleaningco@gmail.com">
+📧 EMAIL US
 </a>
 </div>
 <div class="section">
 <h2>OUR SERVICES</h2>
-<div class="service">🧼 Deep Cleaning</div>
-<div class="service">🏠 Residential Cleaning</div>
-<div class="service">🚚 Move-In / Move-Out Cleaning</div>
-<div class="service">📅 Weekly Service</div>
-<div class="service">📅 Bi-Weekly Service</div>
-<div class="service">📅 Monthly Service</div>
+<div class="cards">
+<div class="card">
+🧼 Deep Cleaning
+</div>
+<div class="card">
+🏠 Residential Cleaning
+</div>
+<div class="card">
+🚚 Move-In / Move-Out Cleaning
+</div>
+<div class="card">
+📅 Weekly Service
+</div>
+<div class="card">
+📅 Bi-Weekly Service
+</div>
+<div class="card">
+📅 Monthly Service
+</div>
+</div>
+</div>
+<div class="section">
+<h2>PRICING</h2>
+<div class="pricing">
+<div class="price">
+<h3>1 Bed / 1 Bath</h3>
+<p>Starting at $90</p>
+</div>
+<div class="price">
+<h3>2 Bedroom</h3>
+<p>Starting at $120</p>
+</div>
+<div class="price">
+<h3>3+ Bedroom</h3>
+<p>Starting at $150</p>
+</div>
+<div class="price">
+<h3>Deep Clean</h3>
+<p>Starting at $160</p>
+</div>
+<div class="price">
+<h3>Hourly Cleaning</h3>
+<p>$30/hr</p>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>WHY CHOOSE US?</h2>
+<div class="cards">
+<div class="card">
+✅ Reliable & Professional
+</div>
+<div class="card">
+✅ Flexible Scheduling
+</div>
+<div class="card">
+✅ Free Estimates
+</div>
+<div class="card">
+✅ Satisfaction Focused
+</div>
+</div>
+</div>
+<div class="section">
+<h2>RECENT PROJECTS</h2>
+<div class="gallery">
+<div>
+📸 Add Cleaning Photo #1
+</div>
+<div>
+📸 Add Cleaning Photo #2
+</div>
+<div>
+📸 Add Cleaning Photo #3
+</div>
+<div>
+📸 Add Cleaning Photo #4
+</div>
+</div>
+</div>
+<div class="section">
+<h2>CUSTOMER REVIEWS</h2>
+<div class="review">
+⭐⭐⭐⭐⭐ Amazing service. House looked brand new.
+</div>
+<div class="review">
+⭐⭐⭐⭐⭐ Professional, friendly and thorough.
+</div>
+<div class="review">
+⭐⭐⭐⭐⭐ Will definitely book again.
+</div>
+</div>
+<div class="section">
+<h2>REFERRAL PROGRAM</h2>
+<div class="card">
+🎁 Refer a friend and receive a discount on future services when they book.
+</div>
 </div>
 <div class="footer">
-<h2>FREE ESTIMATES</h2>
+<h2>CONTACT US</h2>
 <p>📞 (508) 418-2088</p>
 <p>📧 saylesscleaningco@gmail.com</p>
+<p>📍 Cape Cod • South Shore • Bristol County</p>
+<br>
 <p>
-Serving Plymouth • Kingston • Cape Cod • Bristol County
+💖 Say Less. We'll Handle The Rest.
 </p>
-<p>
-Say Less. We'll Handle The Rest.
-</p>
+<div class="social">
+<a href="#">
+Facebook
+</a>
+<a href="#">
+Instagram
+</a>
+</div>
 </div>
 </body>
 </html>
